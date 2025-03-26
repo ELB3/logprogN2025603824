@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo2"/>
+        <attribute name="authors" value="brian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 08:58:48 p. m."/>
+        <attribute name="created" value="YnJpYW47RUxCOzIwMjUtMDMtMjU7MDg6MjM6MzUgcC4gbS47MjIwNw=="/>
+        <attribute name="edited" value="YnJpYW47RUxCOzIwMjUtMDMtMjU7MDg6NTg6NDggcC4gbS47MTsyMzI3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <output expression="&quot;Introducir A&#241;o&quot;" newline="True"/>
+            <input variable="A"/>
+            <if expression="(A%400)== 0">
+                <then>
+                    <output expression="&quot;El a&#241;o es biciesto&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(A%100)==0">
+                        <then>
+                            <output expression="&quot;el a&#241;o no es biciesto&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(A%4)==0">
+                                <then>
+                                    <output expression="&quot;Si es biciesto&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;el A&#241;o no es biciesto&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

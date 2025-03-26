@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Reactivo1"/>
+        <attribute name="authors" value="brian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-03-25 07:33:41 p. m."/>
+        <attribute name="created" value="YnJpYW47RUxCOzIwMjUtMDMtMjU7MDY6NTI6NTggcC4gbS47MjIxMg=="/>
+        <attribute name="edited" value="YnJpYW47RUxCOzIwMjUtMDMtMjU7MDc6MzM6NDEgcC4gbS47MjsyMzEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Donas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Numero de donas&quot;" newline="True"/>
+            <input variable="Donas"/>
+            <if expression="Donas&gt;=50">
+                <then>
+                    <output expression="Donas * 8" newline="True"/>
+                </then>
+                <else>
+                    <if expression="Donas&gt;=30">
+                        <then>
+                            <output expression="Donas * 9" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="Donas&gt;0">
+                                <then>
+                                    <output expression="Donas * 10" newline="True"/>
+                                </then>
+                                <else/>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
