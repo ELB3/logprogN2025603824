@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="grupo"/>
+        <attribute name="authors" value="brian"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-01 10:10:19 p. m."/>
+        <attribute name="created" value="YnJpYW47RUxCOzIwMjUtMDMtMzE7MDc6NDg6NDggcC4gbS47MjIxNA=="/>
+        <attribute name="edited" value="YnJpYW47RUxCOzIwMjUtMDQtMDE7MTA6MTA6MTkgcC4gbS47MjsyMzAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sexo" type="String" array="False" size=""/>
+            <declare name="I" type="String" array="False" size=""/>
+            <output expression="&quot;introducir sexo M o H&quot;" newline="True"/>
+            <input variable="Sexo"/>
+            <output expression="&quot;introducir Inicial&quot;" newline="True"/>
+            <input variable="I"/>
+            <if expression="(Sexo==&quot;M&quot;)AND(I==&quot;A&quot; OR I==&quot;B&quot; OR I==&quot;C&quot; OR I==&quot;D&quot; OR I==&quot;E&quot; OR I==&quot;F&quot; OR I==&quot;G&quot; OR I==&quot;H&quot; OR I==&quot;I&quot; OR I==&quot;J&quot; OR I==&quot;K&quot; OR I==&quot;L&quot; OR I==&quot;M&quot;)">
+                <then>
+                    <output expression="&quot;Estas en el grupo A&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="(Sexo==&quot;M&quot;)AND(I == &quot;N&quot; OR I == &quot;O&quot; OR I == &quot;P&quot; OR I == &quot;Q&quot; OR I == &quot;R&quot; OR I == &quot;S&quot; OR I == &quot;T&quot; OR I == &quot;U&quot; OR I == &quot;V&quot; OR I == &quot;W&quot; OR I == &quot;X&quot; OR I == &quot;Y&quot; OR I == &quot;Z&quot;)">
+                        <then>
+                            <output expression="&quot;Estas en el grupo B&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="(Sexo==&quot;H&quot;)AND(I==&quot;A&quot; OR I==&quot;B&quot; OR I==&quot;C&quot; OR I==&quot;D&quot; OR I==&quot;E&quot; OR I==&quot;F&quot; OR I==&quot;G&quot; OR I==&quot;H&quot; OR I==&quot;I&quot; OR I==&quot;J&quot; OR I==&quot;K&quot; OR I==&quot;L&quot; OR I==&quot;M&quot;)">
+                                <then>
+                                    <output expression="&quot;Estas en el grupo B&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;Estas en el grupo A&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
