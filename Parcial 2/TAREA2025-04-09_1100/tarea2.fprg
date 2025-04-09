@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="tarea2"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 10:56:57 p. m."/>
+        <attribute name="created" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wODsxMDo1MDo0OSBwLiBtLjsyNTg1"/>
+        <attribute name="edited" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wODsxMDo1Njo1NyBwLiBtLjsxOzI2OTg="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="r, t, s, i" type="Integer" array="False" size=""/>
+            <assign variable="r" expression="1"/>
+            <assign variable="t" expression="2"/>
+            <output expression="r" newline="True"/>
+            <output expression="t" newline="True"/>
+            <assign variable="i" expression="1"/>
+            <for variable="i" start="1" end="62" direction="inc" step="1">
+                <assign variable="s" expression="r+t"/>
+                <assign variable="r" expression="t"/>
+                <assign variable="t" expression="s"/>
+                <output expression="s" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

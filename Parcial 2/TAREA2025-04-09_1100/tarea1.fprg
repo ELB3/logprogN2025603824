@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="factorial"/>
+        <attribute name="authors" value="gabri"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-04-08 10:50:40 p. m."/>
+        <attribute name="created" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wODsxMDo0MjoxMCBwLiBtLjsyNTc0"/>
+        <attribute name="edited" value="Z2Ficmk7RkFNSUxZUUE7MjAyNS0wNC0wODsxMDo1MDo0MCBwLiBtLjsxOzI2ODQ="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, t" type="Integer" array="False" size=""/>
+            <output expression="&quot;ingresa un numero entero&quot;" newline="True"/>
+            <input variable="n"/>
+            <assign variable="t" expression="1"/>
+            <while expression="n&gt;1">
+                <assign variable="t" expression="t*n"/>
+                <assign variable="n" expression="n-1"/>
+            </while>
+            <output expression="t" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
